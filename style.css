@@ -1,111 +1,57 @@
-/* -----------------------------------*/
-/* ---------->>> header <<<-----------*/
-/* -----------------------------------*/
-
 header {
-    background: #f5f3ef;
-}
-
-.menu {
-    position: relative;
-}
-
-.logo {
-    width: 30%;
-}
-
-.nav-menu {
-    position: absolute;
-    width: relative;
-    top: 45%;
-    right: 10%;
-}
-
-.nav-li {
-    display: inline-block;
-    margin: 0 0 0 1em;
-}
-
-.nav-a {
-    text-transform: uppercase;
-    color: #806358;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.nav-a:hover {
-    color: hsl(17, 27%, 28%);
-}
-
-/* -----------------------------------*/
-/* ---------->>> main <<<-----------*/
-/* -----------------------------------*/
-
-main {
-    padding: 0 6em;
-    font-family: 'EB Garamond', serif;
-    font-size: 1.3em;
-}
-
-.titulo {
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    padding: 1.5em 0;
-}
-
-.titulo::before {
-    content: "{ "
-}
-
-.titulo::after {
-    content: " }"
-}
-
-.avatar {
-    border-radius: 100%;
-    width: 20%;
-    display: inline-block;
-}
-
-.texto {
-    display: inline-block;
-    padding: 1em 5em;
-    line-height: 1.5;
-    vertical-align: top;
-}
-
-nav a {
-    color: #806358;
-    font-weight: bold;
-    text-decoration: none;
-    line-height: 1.5;
-}
-
-nav a:before {
-    content: "❀ "
-}
-
-nav a:hover {
-    color: hsl(17, 27%, 28%);
-}
-
-/* -----------------------------------*/
-/* ---------->>> footer <<<-----------*/
-/* -----------------------------------*/
-
-footer {
-    text-align: center;
-    padding: 40px 0;
-    color: #806358;
-    background: #f5f3ef;
-    font-size: 13px;
-    margin: 20px 0 0;
-    line-height: 1.5;
-}
-
-footer a {
-    text-decoration: none;
-    color:hsl(17, 27%, 28%)
-}
+    font-size: 100%;
+    background: rgb(250,246,236);
+    background: linear-gradient(90deg, rgba(250,246,236,1) 0%, rgba(251,238,208,1) 100%);
+  }
+  
+  section {
+      margin-bottom: 5rem;
+  }
+  
+  .home {
+    margin-top: 5rem;
+  }
+  
+  #avatar {
+      width: 85%;
+      margin-top: 2.5rem;
+  }
+  
+  .progress {
+      margin: 1rem 0;
+      height: 2rem;
+  }
+  
+  a {
+      text-decoration: none;
+      color: #a18cd1;
+  }
+  
+  a:hover {
+      color: #8665d3;
+  }
+  
+  .progress-bar {
+      background-color: rgb(235, 154, 154);
+  }
+  
+  /* ============ FOOTER ============ */
+  footer {
+    font-size: 100%;
+    background: rgb(250,246,236);
+    background: linear-gradient(90deg, rgba(251,238,208,1) 100%, rgba(250,246,236,1) 0%);
+  }
+  
+  .footer-div {
+      padding: 0.5rem;
+  }
+  
+  .social-media, .made-by {
+    padding: 0.25rem;
+      text-align: center;
+  }
+  
+  .social-media a {
+    padding: 0.25rem;
+  }
+  

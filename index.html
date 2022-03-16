@@ -1,64 +1,168 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Alessandra Asato @ariencchi</title>
-        <link rel="icon" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPgo8Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGQTVFOTc7IiBkPSJNMzI4Ljg2MSwxNjguMjcxbC0xNi40MDYtMjUuMTM3YzM3LjQyNy0yNC40MTksODIuMTQ4LTMzLjUwMSwxMjYuMTA4LTI1LjQxNWwtNS4zOTEsMjkuNTAyICAgQzM5Ni44MTUsMTQwLjYyOSwzNTkuNzk5LDE0OC4wNywzMjguODYxLDE2OC4yNzF6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRkE1RTk3OyIgZD0iTTM2NS4zNjUsMTMzLjI0NmMtMS42MTEtMjMuNDgxLTE0LjUzMS00NC44MzktMzQuNTctNTcuMTI5bDE1LjY4OC0yNi41NzYgICBjMjguMjg2LDE3LjM1OCw0Ni41MzgsNDguNTA1LDQ4LjgyMyw4MS42NTRMMzY1LjM2NSwxMzMuMjQ2eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZBNUU5NzsiIGQ9Ik0zNjAuMzk5LDIwMS4wOTlMMjU2LDI3My4xbC0xMDQuMzk5LTcyLjAwMWM4LjY5OS02MS4xOTksOTMuOS0xMDYuNSw5Ny41LTEwOC4zTDI1Niw4OS4ybDYuODk5LDMuNiAgIEMyNjYuNDk5LDk0LjYsMzUxLjcsMTM5LjksMzYwLjM5OSwyMDEuMDk5eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0Q5NEY4ODsiIGQ9Ik0zNjAuMzk5LDIwMS4wOTlMMjU2LDI3My4xVjg5LjJsNi44OTksMy42QzI2Ni40OTksOTQuNiwzNTEuNywxMzkuOSwzNjAuMzk5LDIwMS4wOTl6Ii8+Cgk8cmVjdCB4PSIyNDEiIHk9IjE4MSIgc3R5bGU9ImZpbGw6I0Q5NEY4ODsiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxMDUiLz4KCTxyZWN0IHg9IjI1NiIgeT0iMTgxIiBzdHlsZT0iZmlsbDojRDMzQzgwOyIgd2lkdGg9IjE1IiBoZWlnaHQ9IjEwNSIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0Q5NEY4ODsiIGQ9Ik00NTMuNTM0LDM1Ni4zMTNMMzMxLjQxLDM0NS44NjhsLTE1Ljg2NCwxMDEuODIxYzEwLjA5MywyLjc5OCwyMC44MTUsMy45NCwzMS41ODIsMy45NCAgIGMzMy42ODksMCw2OS4zNjUtMTAuNTY5LDEwMS4wNzQtMjQuNTUxQzQ1Mi41NDQsNDA0LjAyNyw0NTQuODg0LDM4MS40NzgsNDUzLjUzNCwzNTYuMzEzeiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZBNUU5NzsiIGQ9Ik0xODAuNTc1LDM0NS44NjhMNTguNDY2LDM1Ni4zMTNjLTEuMzQzLDI1LjA0OCwwLjk2NCw0Ny41NzcsNS4zMzIsNzAuNzY3ICAgYzMxLjcxLDEzLjk4Miw2Ny4zODUsMjQuNTUxLDEwMS4wNzQsMjQuNTUxYzEwLjc2NywwLDIxLjQ4OS0xLjE0MywzMS41ODItMy45NEwxODAuNTc1LDM0NS44Njh6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRkY3Q0I5OyIgZD0iTTUxMiwyODZjLTIzLjY5OSw0Ni41LTY4LjgsMTA1LTEyMSwxMDVjLTE1LjYwMSwwLTMyLjcwMS0yLjcwMS00OS41MDEtNy41SDE3MC41MDEgICBjLTE2LjgsNC43OTktMzMuOSw3LjUtNDkuNTAxLDcuNWMtNTIuMiwwLTk3LjMwMS01OC41LTEyMS0xMDVjMjMuNjk5LTQ2LjUsNjguOC0xMDUsMTIxLTEwNWM1MC4wOTksMCwxMDguMywyNS40OTksMTM1LDYyLjM5OSAgIEMyODIuNywyMDYuNDk5LDM0MC45MDEsMTgxLDM5MSwxODFDNDQzLjIsMTgxLDQ4OC4zMDEsMjM5LjUsNTEyLDI4NnoiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGQTVFOTc7IiBkPSJNNTEyLDI4NmMtMjMuNjk5LDQ2LjUtNjguOCwxMDUtMTIxLDEwNWMtMTUuNjAxLDAtMzIuNzAxLTIuNzAxLTQ5LjUwMS03LjVIMjU2VjI0My4zOTkgICBDMjgyLjcsMjA2LjQ5OSwzNDAuOTAxLDE4MSwzOTEsMTgxQzQ0My4yLDE4MSw0ODguMzAxLDIzOS41LDUxMiwyODZ6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRkE1RTk3OyIgZD0iTTQxMi41OTksMjcyLjVMMzk5LjQwMSwyOTkuNUMzNjcsMjgzLjI5OSwzMjguNTk5LDI4NS43LDI5OC41OTksMzA1Ljc5OUwyNjQuNDAxLDMzNC42aC0xNi44MDIgICBsLTM0LjE5OS0yOC44MDFjLTI5LjctMjAuMDk5LTY4LjQwMS0yMi41LTEwMC44MDEtNi4yOTlMOTkuNDAxLDI3Mi41YzkxLjUtNDUuNjAxLDE1My42LDMwLDE1Ni41OTksMzEuNSAgIEMyNTguOTk5LDMwMi41LDMyMS4wOTksMjI2Ljg5OSw0MTIuNTk5LDI3Mi41eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0Q5NEY4ODsiIGQ9Ik00MTIuNTk5LDI3Mi41TDM5OS40MDEsMjk5LjVDMzY3LDI4My4yOTksMzI4LjU5OSwyODUuNywyOTguNTk5LDMwNS43OTlMMjY0LjQwMSwzMzQuNkgyNTZ2LTMwLjYwMSAgIEMyNTguOTk5LDMwMi41LDMyMS4wOTksMjI2Ljg5OSw0MTIuNTk5LDI3Mi41eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGOUFDOTsiIGQ9Ik0yNTYsMzAxYy0yNi4xLDAtMTA1LDAtMTA1LDc1YzAsNDkuNzk5LDY2LDEwNS4wOTksMTA1LDEzNmMzOS0zMC45MDEsMTA1LTg2LjIwMSwxMDUtMTM2ICAgQzM2MSwzMDEsMjgyLjEsMzAxLDI1NiwzMDF6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRkY3Q0I5OyIgZD0iTTM2MSwzNzZjMCw0OS43OTktNjYsMTA1LjA5OS0xMDUsMTM2VjMwMUMyODIuMSwzMDEsMzYxLDMwMSwzNjEsMzc2eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGN0NCOTsiIGQ9Ik00NTEsMTgxYy0yMy43MjUsMC0zNC42MzEtMTEuMTE0LTMwLjkyMy0zNS45NzdjMS4yMzUtOC4wODksMS4yMzQtOS45NjEsMC0xOC4wNDcgICBDNDE2LjM2OSwxMDIuMTE1LDQyNy4yNzQsOTEsNDUxLDkxYzMzLjY0NywwLDYxLDE5Ljc2MSw2MSw0NVM0ODQuNjQ3LDE4MSw0NTEsMTgxeiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGN0NCOTsiIGQ9Ik0yOTUuMzAyLDg2Ljg5N2MtMjQuOTc2LTIyLjU0NC0zMS4yODktNTUuODczLTE0LjM4NS03NC42MDhsMC4wMTUtMC4wMTUgICBjMTYuOTE5LTE4LjcwNiw0OS43MTctMTUuNzE4LDc0LjY3OCw2LjgyNmMxNy43MjQsMTUuOTg3LDE4LjE1LDMyLjU3MS0xLjE1Nyw0OC40MzJjLTYuMjQ5LDUuMTE3LTcuNDc3LDYuMzgyLTEyLjEsMTMuNDAzICAgQzMyOC40MzYsMTAxLjgzMywzMTIuODg5LDEwMi43ODQsMjk1LjMwMiw4Ni44OTd6Ii8+Cgk8cmVjdCB4PSIyNDEiIHk9IjM2MSIgc3R5bGU9ImZpbGw6I0ZBNUU5NzsiIHdpZHRoPSIzMCIgaGVpZ2h0PSI2MCIvPgoJPHJlY3QgeD0iMjU2IiB5PSIzNjEiIHN0eWxlPSJmaWxsOiNEOTRGODg7IiB3aWR0aD0iMTUiIGhlaWdodD0iNjAiLz4KPC9nPgoKCgoKCgoKCgoKCgoKCgo8L3N2Zz4K" />
-        <link href="https://ariencchi.github.io/reset.css" rel="stylesheet"/>
-        <link href="https://ariencchi.github.io/style.css" rel="stylesheet"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandra Asato</title>
+    <link rel="icon" href="https://img.icons8.com/color-glass/48/000000/flower-doodle.png"/>
+      <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
 
-    <body>
-        <header>
-			<div class="menu">
-				<h1><img src="https://ariencchi.github.io/img/logo.png" alt="logo de flor" class="logo"></h1>
-				<nav class="nav-menu">
-					<ul>
-						<li class="nav-li"><a class="nav-a" href="#sobre">Sobre</a></li>
-						<li class="nav-li"><a class="nav-a" href="#projetos">Projetos</a></li>
-						<li class="nav-li"><a class="nav-a" href="#contato">Contato</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-          
-        <main>
-            <section id="sobre">
-                <h2 class="titulo">Sobre</h2>
-                <img src="https://avatars.githubusercontent.com/u/71857370?v=4" alt="foto de perfil" class="avatar"/>
-                <p class="texto">Olá! Meu nome é Alessandra, mas pode me chamar de Arien, se quiser :)<br>
-                    Atualmente, estudo HTML, CSS e JS e pretendo seguir na área de front end.
-                </p>
-            </section>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">&#9825 ariencchi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#habilities">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projetos</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
 
-            <section id="projetos">
-                <h2 class="titulo">Meus projetos</h2>
-                <nav>
-                    <ul>
-                        <li><a href="https://ariencchi.github.io/site-ada/">Primeiro site via PrograMaria</a></li>
-                        <li><a href="https://ariencchi.github.io/certificard/">Projetos da imersao.dev da Alura</a></li>
-                    </ul>
-                </nav>
-                
-            </section>
+    <main>
+      <section class="home">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col text-center">
+              <h3 class="title" id="about">&#8901 Olá, mundo! &#8901</h3>
+              <p class="lead"></br>
+              Meu nome é Alessandra e sou estudante de Análise e Desenvolvimento de Sistemas pela Estácio desde 2021.</br></br>
+              Iniciei meus estudos por conta e tenho um carinho especial pela <a href="https://www.programaria.org/" target="_blank">PrograMaria</a>, <a href="https://app.rocketseat.com.br/" target="_blank">Rocketseat</a> e <a href="https://www.alura.com.br/" target="_blank">Alura</a> &#9825
+              </p>
+              <div class="text-right">
+                <p class="lead">Minhas redes sociais:</p>
+                <div>
+                  <a href="https://github.com/ariencchi" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg><span> ariencchi</span></a><br><br>
+                  <a href="https://www.linkedin.com/in/alessandra-asato/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg><span> alessandra-asato</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-auto">
+              <img id="avatar" src="https://avatars.githubusercontent.com/u/71857370?v=4" alt="Foto de Alessandra" class="img-fluid rounded-circle">
+            </div>
+          </div>
+        </div>      
+      </section>
 
-            <section id="contato">
-                <h2 class="titulo">Contato</h2>
-                <p>Você pode me encontrar em:</p><br>
-                <nav>
-                    <ul>
-                        <li><a href="https://github.com/ariencchi">GitHub</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </main>
+      <section class="habilidades">
+        <div class="container">
+          <div class="row text-center">
+            <h3 class="title" id="habilities">&#8901 Minhas habilidades &#8901</h3>
+            <div class="col text-center">
+              <span>Git</span></br>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                </div>
+                <span>HTML5</span></br>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                </div>
+                <span>CSS3</span></br>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+                </div>
+              </div>
+              <div class="col text-center">
+                <span>JavaScript</span></br>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                </div>
+                <span>JQuery</span></br>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                </div>
+                <span>Bootstrap</span></br>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <footer>
-            <p>Página feita com <3 por <a href="https://github.com/ariencchi">Ariencchi</a> e tab icon por <a href="https://www.flaticon.com/authors/freepik">Freepik</a>.</p>
-        </footer>
-    </body>
+      <section class="destaque">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col text-center">
+              <h3 class="title" id="projects">&#8901 Trabalhos em destaque &#8901</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://ariencchi.github.io/site-ada/img/adaPintura.png" class="card-img-top" alt="foto da Ada Lovelace">
+                  <div class="card-body">
+                  <a href="https://ariencchi.github.io/site-ada/" target="_blank"><h5 class="card-title">Ada Lovelace</h5></a>
+                  <p class="card-text">Primeiro projeto feito em aula com a <a href="https://www.programaria.org/" target="_blank">PrograMaria</a>.</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="foto de uma cabeleireira escovando o cabelo de cliente">
+                  <div class="card-body">
+                  <a href="https://ariencchi.github.io/beautysaloon/" target="_blank"><h5 class="card-title">BeautySaloon</h5></a>
+                  <p class="card-text">Segundo projeto feito em aula com a <a href="https://app.rocketseat.com.br/" target="_blank">Rocketseat</a>.</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://imersao.dev/assets/img/imersoes/dev-2021/og-imersao-dev.1616501197.jpg" class="card-img-top" alt="chamada da imersão dev da Alura">
+                  <div class="card-body">
+                  <a href="https://ariencchi.github.io/certificard/" target="_blank"><h5 class="card-title">ImersaoDev</h5></a>
+                  <p class="card-text">Primeiros projetos feitos nas aulas da ImersãoDev da <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</p>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="navbar-nav">
+      <div class="container-fluid">
+        <nav class="justify-content-md-center">
+          <div class=footer-div>
+            <div class="made-by">
+              <p>feito por &#9825 <a href="https://github.com/ariencchi" target="_blank">ariencchi</a></p>
+            </div>
+            <div class="social-media">
+              <a href="https://github.com/ariencchi" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg></a>
+              <a href="https://www.linkedin.com/in/alessandra-asato/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg></a>       
+            </div>
+          </div>
+        </nav>	  
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>
